@@ -9,8 +9,8 @@ import { DUMMY_USERS } from '../dummy-users';
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-  avatar = input('');
-  name = input('');
+  avatar = input<string>('');
+  name = input<string>('');
 
   get imagePath() {
     return `assets/users/` + this.avatar;
