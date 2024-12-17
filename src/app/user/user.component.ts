@@ -11,8 +11,8 @@ import { DUMMY_USERS } from '../dummy-users';
 export class UserComponent {
   // @Input({required: true}) avatar!: string; 
   // @Input({required: true}) name!: string; 
-  avatar = input<string>();
-  name = input<string>();
+  avatar = input.required<string>();
+  name = input.required<string>();
 
   get imagePath() {
     return `assets/users/` + this.avatar;
