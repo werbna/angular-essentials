@@ -7,6 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrl: './user.component.css'
 })
 export class UserComponent {
+  //Passing an Object Type instead of having three Input Decorators
   @Input({required: true}) user!: {
     id: string;
     name: string;
